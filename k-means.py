@@ -29,36 +29,34 @@ def centrar(casos, K):
         media = iteracion(viejo_m, clusters)
     return(media, clusters)
 
+def to_binary(row):
+    if row[-1] == 'Iris-setosa':
+        return np.append(row[:-1],"1.0")
+    else:
+        return np.append(row[:-1],"0.0")
+v_to_binary = np.vectorize(to_binary)
 
-def leer_archivo(N, k):
+def to_ternary(row):
+    if row[-1] == 'Iris-setosa':
+        return np.append(row[:-1],[1,0,0],axis=0)
+    elif row[-1] == 'Iris-versicolor':
+        return np.append(row[:-1],[0,1,0],axis=0)
+    else:
+        return np.append(row[:-1],[0,0,1],axis=0)
+v_to_ternary = np.vectorize(to_ternary)
 
-    n = float(N)/k
-    casos = []
-    for i in range(k):
-        c = (random.uniform(-1, 1), random.uniform(-1, 1))
-        s = random.uniform(0.05,0.5)
-        x = []
-        while len(x) < n:
-            a, b = np.array([np.random.normal(c[0], s), np.random.normal(c[1], s)])
-            if abs(a) < 1 and abs(b) < 1:
-                x.append([a,b])
-        casos.extend(x)
-    casos = np.array(casos)[:N]
-    return casos
-
-k = 6
+k = 3
 lectura = np.loadtxt('bezdekIris.data',dtype=str,delimiter=",")
-casos = lectura[:,0:4]
-resultados = lectura[:,4]
+bin_dat = np.matrix(map(to_binary,lectura),dtype=np.float)
 
+print "Casos:"
+print bin_dat
 
-c = (centrar(casos,k))[1]
-p = promedio(c,k)
+c = (centrar(np.array(bin_dat),k))[1]
 
 label_color = {0 : '#FF0000',1 : '#FFFF00',2 : '#0033CC',3 : '#00CC00',4 : '#660099',5 : '#FF9900',6 : '#000000',}
 
 
 for i in range(k):
     plt.scatter(np.array(c[i])[:,0],np.array(c[i])[:,1],s=50, alpha = 0.5 ,c=label_color[i])
-    plt.scatter(np.array(p[i])[0],np.array(p[i])[1],s=200, alpha = 1 ,c=label_color[i], marker="*")
 plt.show()
