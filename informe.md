@@ -54,7 +54,7 @@ la convergencia se comprime la informacion en un Scatter plot donde se
 toman 2 de las variables para presentar la información (longuitud y
 ancho del sepalo) ademas genera una imagen comprimida de los
 resultados de cada uno de las observaciones, ambos graficos son
-guardados en las carpetas "/Ejercicio_a" o "/Ejercicio_b"
+guardados en las carpetas "/Imagenes/Ejercicio_a" o "/Imagenes/Ejercicio_b"
 respectivamente dependiendo del enunciado.
 
 \newpage
@@ -70,29 +70,29 @@ información mas veraz del mismo.
 * k = 2
 
 \begin{center}
-\includegraphics[height=4cm]{Ejercicio_a/k_scatter_2.png}
-\includegraphics[height=4cm]{Ejercicio_a/Imagen_K2.jpg}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/k_scatter_2.png}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/Imagen_K2.jpg}
 \end{center}
 
 * k = 3
 
 \begin{center}
-\includegraphics[height=4cm]{Ejercicio_a/k_scatter_3.png}
-\includegraphics[height=4cm]{Ejercicio_a/Imagen_K3.jpg}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/k_scatter_3.png}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/Imagen_K3.jpg}
 \end{center}
 
 * k = 4
 
 \begin{center}
-\includegraphics[height=4cm]{Ejercicio_a/k_scatter_4.png}
-\includegraphics[height=4cm]{Ejercicio_a/Imagen_K4.jpg}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/k_scatter_4.png}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/Imagen_K4.jpg}
 \end{center}
 
 * k = 5
 
 \begin{center}
-\includegraphics[height=4cm]{Ejercicio_a/k_scatter_5.png}
-\includegraphics[height=4cm]{Ejercicio_a/Imagen_K5.jpg}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/k_scatter_5.png}
+\includegraphics[height=4cm]{Imagenes/Ejercicio_a/Imagen_K5.jpg}
 \end{center}
 
 Se puede apreciar que para las corridas con k = {2,3} el algoritmo
@@ -129,44 +129,44 @@ colores en la imagen comprimida. Formalmente la imagen original
 deberia ser de la siguiente forma:
 
 \begin{center}
-\includegraphics[height=6cm]{Imagen_Original.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_Original.jpg}
 \end{center}
 
 Se evalua el algoritmo para los siguientes conjuntos:
 
 * k = 2
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K2.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K2.jpg}
 \end{center}
 
 * k = 4
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K4.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K4.jpg}
 \end{center}
 
 * k = 8
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K8.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K8.jpg}
 \end{center}
 
 * k = 16
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K16.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K16.jpg}
 \end{center}
 
 * k = 32
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K32.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K32.jpg}
 \end{center}
 
 * k = 64
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K64.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K64.jpg}
 \end{center}
 
 * k = 128
 \begin{center}
-\includegraphics[height=6cm]{Ejercicio_b/Imagen_K128.jpg}
+\includegraphics[height=6cm]{Imagenes/Ejercicio_b/Imagen_K128.jpg}
 \end{center}
 
 \newpage
